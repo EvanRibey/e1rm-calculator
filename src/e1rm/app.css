@@ -1,0 +1,16 @@
+:root {
+  --input-margin: 16px;
+}
+
+.rpe-form__input {
+  margin-bottom: var(--input-margin);
+}
+
+.rpe-form__select {
+  margin-bottom: var(--input-margin);
+}
+
+.form-result {
+  font-weight: bold;
+  font-size: 24px;
+}
