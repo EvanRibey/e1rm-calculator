@@ -18,7 +18,7 @@ app.innerHTML = `
     <label class="mdc-text-field mdc-text-field--filled rpe-form__input" id="reps">
       <span class="mdc-text-field__ripple"></span>
       <span class="mdc-floating-label" id="reps-label">Reps</span>
-      <input class="mdc-text-field__input" min="1" type="number" aria-labelledby="reps-label" required>
+      <input class="mdc-text-field__input" min="1" max="12" type="number" aria-labelledby="reps-label" required>
       <span class="mdc-line-ripple"></span>
     </label>
     <div class="mdc-select mdc-select--filled rpe-form__select" id="rpe">
