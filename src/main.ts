@@ -12,13 +12,13 @@ app.innerHTML = `
     <label class="mdc-text-field mdc-text-field--filled rpe-form__input" id="weight">
       <span class="mdc-text-field__ripple"></span>
       <span class="mdc-floating-label" id="weight-label">Weight</span>
-      <input class="mdc-text-field__input" type="number" aria-labelledby="weight-label" required>
+      <input class="mdc-text-field__input" type="number" min="1" aria-labelledby="weight-label" required>
       <span class="mdc-line-ripple"></span>
     </label>
     <label class="mdc-text-field mdc-text-field--filled rpe-form__input" id="reps">
       <span class="mdc-text-field__ripple"></span>
       <span class="mdc-floating-label" id="reps-label">Reps</span>
-      <input class="mdc-text-field__input" type="number" aria-labelledby="reps-label" required>
+      <input class="mdc-text-field__input" min="1" type="number" aria-labelledby="reps-label" required>
       <span class="mdc-line-ripple"></span>
     </label>
     <div class="mdc-select mdc-select--filled rpe-form__select" id="rpe">
@@ -54,15 +54,13 @@ app.innerHTML = `
       </div>
 
       <div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
-        <ul class="mdc-list" role="listbox" aria-label="Food picker listbox">
+        <ul class="mdc-list" role="listbox" aria-label="RPE listing">
           <li class="mdc-list-item mdc-list-item--selected" aria-selected="true" data-value="" role="option">
             <span class="mdc-list-item__ripple"></span>
           </li>
-          <li class="mdc-list-item" aria-selected="false" data-value="6" role="option">
+          <li class="mdc-list-item" aria-selected="false" data-value="0" role="option">
             <span class="mdc-list-item__ripple"></span>
-            <span class="mdc-list-item__text">
-              6
-            </span>
+            <span class="mdc-list-item__text">N/A</span>
           </li>
           <li class="mdc-list-item" aria-selected="false" data-value="6.5" role="option">
             <span class="mdc-list-item__ripple"></span>
